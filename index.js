@@ -20,7 +20,10 @@ bot.on("message", async message => {
     if(cmd === `${prefix}hola`){
       return message.channel.send("Coño, un eidolon que habla !");
     }
-
+    if(cmd === `${prefix}Tigris`){
+      return message.channel.send("Aun no amigo");
+    }
+    }
 });
 
 bot.login(process.env.token);
